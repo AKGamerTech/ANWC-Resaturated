@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(82, 55, 55, 0.3)), url('img/background.png')  center center / cover no-repeat fixed;
+    font-family: 'halcom', sans-serif;
+    font-weight: 200;
+    color: wheat;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Places it behind the content */
+  }
+
+/* General styling for the navbar */
+.nav-bar {
+    font-size: x-large;
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    z-index: 1000; /* or a higher value if needed */
+
+}
+
+/* Styling for the list within the navbar */
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    padding: 0;
+    width: 100%;
+}
+
+/* Styling for each item in the list */
+.nav-item {
+    display: flex;
+    flex: auto;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for links in the navbar */
+.nav-link {
+    text-decoration: none;
+    color: wheat;
+    padding: 10px; /* Add padding around links for better touch targets */
+}
+
+.header-div {
+    height: 100px; /* Set the height you want */
+    display: flex; /* Optional, if you want to center the image */
+    align-items: center; /* Optional, if you want to center the image vertically */
+    justify-content: center; /* Optional, if you want to center the image horizontally */
+}
+
+.header-img {
+    margin-top: 9em;
+    object-fit: cover; /* Ensures the image covers the container */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    display: block;
+    overflow: hidden;
+}
+
+
+.important-message{
+    display: flex;
+    justify-content: center;
+    margin: 4em 0em 1em 0em;
+} 
+
+.important-message-block{
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 10px solid;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block; 
+    color: white;
+    background-color: rgba(50, 0, 0, 0.1);
+    border-color: rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 222, 179);
+}
+
+a:hover {
+    background-color: rgba(245, 222, 179, 0.15);
+    text-decoration: underline;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.important-message-block:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.main-block-top{
+    border-radius: 20px 20px 0 0;
+}
+
+.main-block-bottom{
+    border-radius: 0 0 20px 20px;
+}
+
+.main-block{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);    color: wheat;
+    margin: 0 10em;
+    padding: 5px 0px;
+}
+
+.credits{
+    display: flex;
+    flex: 1;
+}
+
+.credits li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.main-block{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);    color: wheat;
+    margin: 0 10em;
+    padding: 5px 0px;
+}
+
+.main-text-block{
+    margin: 0 2em;
+}
+
+.main-img-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-img-block-item {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensures the zoom effect doesn't cause overflow */
+    position: relative; /* Needed to position the border correctly */
+    margin: 1em;
+}
+
+.main-img {
+    transform: scale(0.9);
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-img:hover {
+    transform: scale(1); /* Scales the image slightly on hover */
+}
+
+.gallery-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-title-block {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+
+}
+
+.gallery-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-block-item {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensures the zoom effect doesn't cause overflow */
+    position: relative; /* Needed to position the border correctly */
+    margin: 1em;
+    border: solid 5px;
+    border-color: rgba(245, 222, 179, 0.5);
+    border-radius:  1em;
+
+}
+
+.gallery-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1); /* Scales the image slightly on hover */
+}
+
+.gallery-img-smaller {
+    transform: scale(0.9);
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img-smaller:hover {
+    transform: scale(1); /* Scales the image slightly on hover */
+}
+
+@media (max-width: 1024px) {
+    .nav-bar {
+        font-size: large;
+    }
+    .main-block {
+        margin: 0 5em;
+    }
+    .main-text-block {
+        margin: 0 1em;
+    }
+    .gallery-block-item{
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        font-size: medium;
+        padding: 5px;
+    }
+    .nav-list {
+        margin: 0;
+    }
+    .main-block {
+        margin: 0 2em;
+        padding: 10px;
+    }
+    .gallery-block-item{
+        margin: 0;
+    }
+    .important-message-block{
+        margin: 0;
+        padding: 1em;
+        scale: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        font-size: large;
+    }
+    .nav-item {
+        margin: 5px 0;
+    }
+    .important-message {
+        margin: 2em;
+    }
+    .main-block {
+        margin: 0;
+    }
+    .main-img-block-item,
+    .gallery-block-item {
+        margin: 0;
+    }
+    .gallery-title {
+        font-size: small;
+    }
+    .gallery-block-item{
+        margin: 0;
+    }
+
+}
