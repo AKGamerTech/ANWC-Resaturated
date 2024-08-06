@@ -115,6 +115,14 @@ a:hover {
     transform: scale(1.1);
 }
 
+.main-title{
+    padding: 0 1em;
+}
+
+.main-text{
+    padding: 0 1em;
+}
+
 .main-block-top{
     border-radius: 20px 20px 0 0;
 }
@@ -236,6 +244,17 @@ a:hover {
 
 .gallery-img-smaller:hover {
     transform: scale(1); /* Scales the image slightly on hover */
+}
+
+.embed-div{
+    margin: 0 5em;
+    background-color: black ;
+}
+
+.embed-iframe{
+    margin: 0 5em;
+    background-color: black ;
+    border-radius: 20px;
 }
 
 @media (max-width: 1024px) {
