@@ -10,6 +10,7 @@ body {
   max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(82, 55, 55, 0.5)),
     url("img/background.png") center center / cover no-repeat fixed;
+    background-color: black;
   background-attachment: fixed;
   font-family: "halcom", sans-serif;
   font-weight: 200;
