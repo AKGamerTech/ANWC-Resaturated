@@ -219,10 +219,12 @@ a:hover {
   position: relative; /* Needed to position the border correctly */
   margin: 1em;
   border: solid 5px;
-  border-color: rgba(245, 222, 179, 0.5);
+  border-color: rgb(78, 71, 58);
   border-radius: 1em;
   backdrop-filter: blur(80px) invert(10%);
   transition: all 0.3s ease-in-out;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(245,222,179,0.3) 100%);
 }
 
 .important-text {
@@ -234,7 +236,9 @@ a:hover {
 
 .gallery-block-item:hover {
   backdrop-filter: blur(40px);
-  background-color: rgba(245, 222, 179, 0.3);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(245,222,179,0.6) 100%);
+  border-color: rgba(245, 222, 179,1);
+
 }
 #black {
   background: radial-gradient(rgba(255, 230, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -313,13 +317,14 @@ a:hover {
   border-radius: 20px;
   margin: 1em;
   border: solid 5px;
-  border-color: rgba(245, 222, 179, 0.5);
+  border-color: rgb(78, 71, 58);
   border-radius: 1em;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .embed-iframe:hover {
   transform: scale(1.1);
+  border-color: rgba(245, 222, 179,1);
 }
 
 @media (max-width: 1024px) {
