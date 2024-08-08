@@ -1,4 +1,4 @@
-# [ANWC-Website-Rewritten](https://akgamertech.github.io/ANWC-Website/index.html)
+# [A Nightmare With Colors: Resaturated](https://akgamertech.github.io/ANWC-Resaturated/index.html)
 
 Hello, this website was made by me.
 --------------------------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ Original concept of FNAF is made by Scott Cawthon and ANWC is a inspiration of i
 
 Font license provided by [Adobe Fonts](https://fonts.adobe.com/fonts/halcom)
 
-[Anyways, here's the website.](https://akgamertech.github.io/ANWC-Website/index.html)
+[Anyways, here's the website.](https://akgamertech.github.io/ANWC-Resaturated/index.html)
 
 STORY:
 ======
@@ -24,7 +24,7 @@ STORY:
 
 > Now, working at The Colorfun Diner, you must complete missions, survive the nightshift and fight traumas, all in the timespan of one night.
 
-![](https://akgamertech.github.io/ANWC-Website/img/reboot.webp)
+![](https://akgamertech.github.io/ANWC-Resaturated/img/reboot.webp)
 
 * * * * *
 
@@ -37,16 +37,16 @@ GAMEPLAY:
 
 Eyetest Demo
 ============
-![](https://akgamertech.github.io/ANWC-Website/img/gifs/resaturated_eyetest.gif)
+![](https://akgamertech.github.io/ANWC-Resaturated/img/gifs/resaturated_eyetest.gif)
 
 Nightshift Demo
 ===============
-![](https://akgamertech.github.io/ANWC-Website/img/gifs/resaturated_nightshift.gif)
+![](https://akgamertech.github.io/ANWC-Resaturated/img/gifs/resaturated_nightshift.gif)
 
 Runeracer Minigame Demo
 =======================
 
-![](https://akgamertech.github.io/ANWC-Website/img/gifs/resaturated_runeracer.gif)
+![](https://akgamertech.github.io/ANWC-Resaturated/img/gifs/resaturated_runeracer.gif)
 
 * * * * *
 
