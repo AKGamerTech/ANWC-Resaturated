@@ -79,7 +79,7 @@ body {
 
 body {
 
-  background: linear-gradient(180deg, var(--black-transparent) 0%, var(--back-current) 100%),
+  background: linear-gradient(180deg, var(--black-transparent) 25%, var(--back-current-dark-less) 50%, var(--back-current) 100%),
     url("img/background.png") center center / cover no-repeat fixed;
   background-color: black;
   background-attachment: fixed;
@@ -91,7 +91,7 @@ body {
   font-size: x-large;
   position: fixed;
   display: flex;
-  background-color: var(--back-current-dark-less);
+  background-color: var(--black-transparent);
   justify-content: center;
   align-items: center;
   max-width: 100%;
@@ -154,20 +154,19 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   display: inline-block;
-  color: white;
+  color: var(--anwc-current);
   border-color: rgba(255, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
 
 a {
-  text-decoration: none;
   color: rgb(245, 222, 179);
 }
 
 a:hover {
   background-color: rgba(245, 222, 179, 0.15);
-  text-decoration: underline;
+  text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -198,7 +197,7 @@ a:hover {
   margin: 0 20vb;
   padding: 5px 0px;
   backdrop-filter: blur(10px);
-  background-color: $black-transparent;
+  background-color: var(--back-current-dark);
   &-top {
     border-radius: 20px 20px 0 0;
   }
@@ -244,6 +243,7 @@ a:hover {
       filter: brightness(1.3);
     }
   }
+  
   .gallery-group {
     margin-bottom: 20px;
     text-align: center;
@@ -252,116 +252,7 @@ a:hover {
       justify-content: center;
       .gallery-title {
         margin-bottom: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        flex: 1;
-      }
-    }
-    .gallery-block {
-      display: block;
-      justify-content: center;
-      gap: 10px;
-      .gallery-block-item {
-        margin: 5vb;
-        overflow: hidden; /* Ensures the zoom effect doesn't cause overflow */
-        border: solid 5px;
-        border-color: var(--anwc-current-dark);
-        border-radius: 1em;
-        backdrop-filter: blur(80px) invert(10%);
-        transition: all 0.3s ease-in-out;
-        background: $black-transparent;
-        background: linear-gradient(
-          180deg,
-          argb(0,0,0,1 n ) 0%,
-          var(--anwc-current-dark) 100%
-        );
-        .gallery-img {
-          width: 100%;
-          display: block;
-          transition: transform 0.3s ease-in-out;
-        }
-        
-        .gallery-img:hover {
-          transform: scale(1.1); /* Scales the image slightly on hover */
-        }
-        
-        .gallery-img-smaller {
-          transform: scale(0.9);
-          width: 100%;
-          display: block;
-          transition: transform 0.3s ease-in-out;
-        }
-        
-        .gallery-img-smaller:hover {
-          transform: scale(1); /* Scales the image slightly on hover */
-        }
-        
-      }
-      .gallery-block-item:hover {
-        backdrop-filter: blur(40px);
-        background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(245, 222, 179, 0.6) 100%
-        );
-        border-color: var(--anwc-current);
-      }
-      #black {
-        background: radial-gradient(rgba(255, 230, 0, 0.3), rgba(0, 0, 0, 0.3));
-      }
-      #black:hover {
-        background: radial-gradient(rgba(255, 230, 0, 0.6), $black-transparent);
-      }
-      
-      #gray {
-        background: radial-gradient(rgba(0, 195, 255, 0.3), rgba(0, 0, 0, 0.3));
-      }
-      
-      #gray:hover {
-        background: radial-gradient(rgba(0, 195, 255, 0.6), $black-transparent);
-      }
-      
-      #white {
-        background: radial-gradient(rgba(0, 255, 0, 0.3), rgba(0, 0, 0, 0.3));
-      }
-      
-      #white:hover {
-        background: radial-gradient(rgba(0, 255, 0, 0.6), $black-transparent);
-      }
-      #ybr {
-        background: rgb(255, 226, 0);
-        background: linear-gradient(
-          90deg,
-          rgba(255, 226, 0, 0.3) 0%,
-          rgba(0, 142, 255, 0.3) 50%,
-          rgba(255, 0, 0, 0.3) 100%
-        );
-      }
-      
-      #ybr:hover {
-        background: rgb(255, 226, 0);
-        background: linear-gradient(
-          90deg,
-          rgba(255, 226, 0, 0.6) 0%,
-          rgba(0, 142, 255, 0.6) 50%,
-          rgba(255, 0, 0, 0.6) 100%
-        );
-      }
-    }
-    
-
-    
-  }
-  .gallery-group {
-    margin-bottom: 20px;
-    text-align: center;
-    .gallery-title-block {
-      display: flex;
-      justify-content: center;
-      .gallery-title {
-        margin-bottom: 10px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         text-align: center;
         flex: 1;
@@ -511,6 +402,9 @@ a:hover {
   .gallery-block-item {
     margin: 0 5vb;
   }
+  .gallery-title{
+    font-size: 1.25rem;
+  }
   .embed-div {
     margin: 0;
   }
@@ -527,8 +421,14 @@ a:hover {
   .main-text-block {
     margin: 0 1em;
   }
+
+  .gallery-title{
+    font-size: 1.25rem !important;
+
+  }
   .gallery-block-item {
     margin: 0;
+
   }
   .embed-div {
     margin: 0;
@@ -543,9 +443,12 @@ a:hover {
   .nav-list {
     margin: 0;
   }
+  .gallery-title{
+    font-size: 1rem !important;
 
+  }
   .main-block {
-    margin: 0 2em;
+    margin: 0 0vb;
     padding: 10px;
   }
   .gallery-block-item {
@@ -565,6 +468,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+
+  .main-text, .important-message, .important-text{
+    font-size: small !important;
+  }
   .nav-bar {
     font-size: medium;
     width: 100%;
@@ -585,6 +492,12 @@ a:hover {
   .main-block {
     margin: 0;
   }
+
+  .gallery-block{
+    display: block !important;
+
+  }
+
   .main-img-block-item,
   .gallery-block-item {
     margin: 0;
